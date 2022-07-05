@@ -4,6 +4,7 @@ html, body {
 }
 
 .header-content {
+    position: relative;
     height: 20vh;
     max-height: 250px;
     background: #0c4662;
@@ -11,6 +12,7 @@ html, body {
 
 #header-bg {
     display: block;
+    object-fit: cover;
     margin-left: auto;
     margin-right: auto;
     z-index: 0;
@@ -22,8 +24,13 @@ html, body {
 
 #header-logo {
     position: absolute;
-    top: calc(10vh - 50px);
+    display: block;
     left: 10px;
+    top: 0;
+    bottom: 0;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
     z-index: 1;
 }
 
@@ -53,3 +60,27 @@ html, body {
     border: 1px solid black;
     width: 15%;
 }
+
+#ceid-name {
+    display: none;
+    font-size: 10px;
+    color: rgb(201, 196, 196);
+}
+
+/*#region breapoints */
+
+@media only screen and (max-width: 600px) {
+    #header-bg {
+        display: none;
+    }
+
+    #ceid-name {
+        display: block;
+        text-align: right;
+        margin: 0px;
+        padding-top: 8%;
+        padding-right: 2%;
+    }
+}
+
+/*#endregion*/
