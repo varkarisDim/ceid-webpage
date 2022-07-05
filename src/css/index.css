@@ -61,6 +61,17 @@ html, body {
 #center-column {
     border: 1px solid green;
     width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#center-column > p {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    color: #F1E07E;
+    background: #810E0E;
 }
 
 #right-column {
