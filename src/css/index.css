@@ -28,10 +28,18 @@ html, body {
     left: 10px;
     top: 0;
     bottom: 0;
-    display: block;
     margin-top: auto;
     margin-bottom: auto;
     z-index: 1;
+}
+
+#name-cont {
+    display: none;
+}
+
+#ceid-name {
+    font-size: 10px;
+    color: rgb(201, 196, 196);
 }
 
 .main-content {
@@ -44,7 +52,6 @@ html, body {
 .column {
     flex: 1 1 auto;
 }
-
 
 #left-column {
     border: 1px solid black;
@@ -61,12 +68,6 @@ html, body {
     width: 15%;
 }
 
-#ceid-name {
-    display: none;
-    font-size: 10px;
-    color: rgb(201, 196, 196);
-}
-
 /*#region breapoints */
 
 @media only screen and (max-width: 600px) {
@@ -74,12 +75,19 @@ html, body {
         display: none;
     }
 
-    #ceid-name {
+    #name-cont {
+        position: absolute;
         display: block;
+        right: 2%;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    #ceid-name {
+        margin: 0;
         text-align: right;
-        margin: 0px;
-        padding-top: 8%;
-        padding-right: 2%;
+        width: 100%;
     }
 }
 
