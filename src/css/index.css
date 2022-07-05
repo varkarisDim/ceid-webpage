@@ -4,8 +4,9 @@ html, body {
 }
 
 .header-content {
-    height: 150px;
-    background: rgb(52, 152, 165)
+    height: 20vh;
+    max-height: 250px;
+    background: #0c4662;
 }
 
 #header-bg {
@@ -13,19 +14,24 @@ html, body {
     margin-left: auto;
     margin-right: auto;
     z-index: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 1140px;
+    max-height: 250px;
 }
 
 #header-logo {
     position: absolute;
-    top: 25px;
+    top: calc(10vh - 50px);
     left: 10px;
     z-index: 1;
 }
 
 .main-content {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    height: calc(100% - 150px);
+    height: calc(100% - 20vh);
 }
 
 .column {
